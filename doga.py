@@ -40,7 +40,48 @@ osz = input("Szeretnéd látni az összes állatot? (igen/nem): ")
 if osz == "igen":
     print(allatok)
 """
-x = "hello"
+"""
+1. Feladat: Osztás nullával
+	Leírás: Írj egy programot, amely két számot kér be a felhasználótól, és elvégzi a második szám osztását az elsővel. Ha a második szám nullával egyenlő, a program ne omoljon 	össze, hanem írjon ki egy hibaüzenetet, hogy nullával nem lehet osztani.
 
-if not type(x) is int:
-  raise TypeError("Only integers are allowed")
+	Használd a try-except blokkot a ZeroDivisionError hibára.
+"""
+"""
+szam1 = int(input("Adj meg egy számot: "))
+szam2 = int(input("Adj meg egy másik számot: "))
+try:
+    print(szam1 // szam2)
+except ZeroDivisionError:
+    print("nm")
+"""
+"""
+2. Feladat: Helytelen adattípus
+	Leírás: Készíts egy programot, amely egy számot kér be a felhasználótól, és kiírja annak négyzetét. Ha a felhasználó nem számot ad meg, a program figyelmeztessen, hogy 	helytelen adattípust adott meg.
+"""
+"""
+szam3 = int(input("Adj meg egy számot: "))
+
+try:
+    print(szam3 ** 2)
+except ValueError:
+    print("2sefse")
+"""
+"""
+3. Feladat: Fájl olvasása
+	Leírás: Írj egy programot, amely megpróbál megnyitni és beolvasni egy data.txt nevű fájlt. Ha a fájl nem található, a program írja ki, hogy a fájl nem létezik.
+"""
+"""
+try:
+    adat = open(data.txt)
+except:
+    print("awf")
+"""
+"""
+4. Feladat: Lista elem lekérése index alapján
+	Leírás: Készíts egy programot, amely egy listából kér le elemeket egy megadott index alapján. Kérj be egy indexet a felhasználótól, és próbáld meg kiolvasni az adott indexű 	elemet a listából. Ha az index kívül esik a lista határain, kezelje a program a hibát.
+"""
+"""
+ind = int(input("Adj meg egy indexet: "))
+lis = [1, 2, 3, 4, 5]
+print(list[ind])
+"""
